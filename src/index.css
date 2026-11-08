@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-soft: #f8f1f2;
+  --bg-cream: #fffaf8;
+  --panel: #ffffff;
+  --panel-alt: #f7efef;
+  --blush: #f3d6d8;
+  --rose: #e7b7bc;
+  --rose-strong: #d9728f;
+  --rose-dark: #9f4e5d;
+  --brown: #3f2c2f;
+  --brown-soft: #6d5658;
+  --muted: #7a6f71;
+  --border: rgba(99, 73, 80, 0.12);
+  --shadow: 0 18px 40px rgba(113, 77, 82, 0.12);
+  --shadow-soft: 0 12px 28px rgba(88, 58, 65, 0.08);
+  --success: #2d8f72;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fffaf8 0%, #fff7f5 100%);
+  color: var(--brown);
+  font-family: 'Manrope', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--rose-strong), #c76e8f);
+  border: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #d77797, #c86f8d);
+}
+
+.btn-outline-secondary {
+  border-color: rgba(104, 76, 82, 0.2);
+  color: var(--brown);
+}
+
+.btn-link {
+  color: var(--rose-dark);
+}
+
+.loading-box,
+.empty-state {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 220px;
+}
+
+.empty-state h3,
+.empty-state p {
+  margin-bottom: 16px;
+}
